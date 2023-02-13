@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>RPSLS</title>
+</head>
+
+<body>
+    <nav>
+        <h2>ROCK . PAPER . SCISSORS . LIZARD . SPOCK</h2>
+    </nav>
+
+    <section>
+        <div class="display_top_lign" class="display">
+            <button id="rock" onclick="getUserChoice(0)" class="user_choice"><img src="images/rock.png" alt=""><span
+                    class="choice">ROCK</span></button>
+
+            <button id="paper" onclick="getUserChoice(1)" class="user_choice"><img src="images/paper.png" alt=""><span
+                    class="choice">PAPER</span></button>
+        </div>
+
+        <div class="display_middle_lign" class="display">
+            <button id="scissors" onclick="getUserChoice(2)" class="user_choice"><img src="images/scissors.png"
+                    alt=""><span class="choice">SCISSORS</span></button>
+
+            <button id="lizard" onclick="getUserChoice(3)" class="user_choice"><img src="images/lizard.png" alt=""><span
+                    class="choice">LIZARD</span></button>
+        </div>
+
+        <div class="display_bottom_lign" class="display">
+            <button id="spock" onclick="getUserChoice(4)" class="user_choice"><img src="images/spock.png" alt=""><span
+                    class="choice">SPOCK</span></button>
+        </div>
+    </section>
+
+    <section>
+        <div class="display_choices">
+            <div id="log_player_choice" class="log_message"></div>
+            <div id="log_computer_choice" class="log_message"></div>
+        </div>
+
+        <div id="log_win_or_loose"></div>
+
+    </section>
+</body>
+
+</html>

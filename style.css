@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(19, 19, 19);
+    font-family: 'Lilita One', cursive;
+    background: linear-gradient(0deg,#2cbdc7,#040b0c 80%) no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2 {
+    text-align: center;
+    color: rgb(101, 207, 226);
+}
+
+section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.display_choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.display_top_lign,
+.display_middle_lign,
+.display_bottom_lign {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.display_top_lign {
+    gap: 8%;
+}
+
+.display_middle_lign {
+    gap: 25%;
+    margin: 5% 5% 2% 5%;
+}
+
+.user_choice {
+    width: 100px;
+    height: 100px;
+    background: lightseagreen;
+    border: solid whitesmoke 2px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+span {
+    font-family: 'Lilita One', cursive;
+}
+
+.user_choice:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.user_choice:active {
+    transform: translateX(20%);
+}
+
+.user_choice img {
+    width: 50%;
+    height: 50%;
+}
+
+.log_message {
+    height: 40px;
+    width: 280px; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 1.5em;
+    border: solid 2px transparent;
+    border-radius: 5px;
+}
+
+.display_choices {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+#log_win_or_loose {
+    margin: 20px auto;
+    height: 60px;
+    width: 300px;
+    font-size: 1.7em;
+    text-align: center;
+    padding: 30px;
+    color: lightblue;
+    border-radius: 5px;
+
+}
+
+
+  /* responsive for tablets________________________________________________________________________________*/
+@media screen and (max-width: 868px) {
+section {
+    width: 100%;
+}
+    }
+
+      /* responsive for smartphones________________________________________________________________________________*/
+@media screen and (max-width: 568px) {
+h2 {
+        font-size: 1.2em;
+    }
+
+.user_choice {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    padding: 20px;
+}
+
+span {
+    font-size: 0.8em;
+}
+
+.display_top_lign {
+    gap: 5%;
+}
+
+.display_middle_lign {
+    gap: 30%;
+    margin: 5% 5% 2% 5%;
+}
+.log_message {
+    height: 60px;
+    width: 180px;
+    margin: 0 5px;
+    padding: auto 3px;
+    font-size: 1.2em;
+}
+
+#log_win_or_loose {
+    margin: 50px auto;
+    font-size: 1.4em;
+}
+    }
