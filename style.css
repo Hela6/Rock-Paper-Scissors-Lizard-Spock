@@ -133,7 +133,7 @@ section {
 }
 
 h2 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
 .user_choice {
@@ -141,6 +141,12 @@ h2 {
     height: 80px;
     margin: 10px;
     padding: 20px;
+}
+
+.user_choice:hover {
+    cursor: pointer;
+    transform: scale(1) rotate(0);
+    transition: transform 0.3s ease-in-out;
 }
 
 span {
@@ -153,22 +159,23 @@ span {
 
 .display_middle_lign {
     gap: 30%;
-    margin: 5% 5% 2% 5%;
+    margin: 5% 5% 0 5%;
 }
 .log_message {
     height: 40px;
-    width: 150px;
-    margin: 0 5px;
-    padding: auto 3px;
-    font-size: 1.1em;
+    width: 190px;
+    margin: 0 2px;
+    padding: 0 2px;
+    font-size: 1em;
 }
 
 #log_win_or_loose {
     margin: 50px auto;
     width: 200px;
+    height: 50px;
     font-size: 1.3em;
     margin: 20px auto;
-    padding: 20px;
+    padding: 5px;
 }
 }
     
