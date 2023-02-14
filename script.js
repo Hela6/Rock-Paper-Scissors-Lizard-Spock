@@ -80,28 +80,28 @@ function winOrLoose() {
 
 
 function clearMessages() {
-    let clearWoL = document.querySelector("#log_win_or_loose");
+    let clearWoL = document.querySelector("#log_win_or_loose p");
     clearWoL.style.backgroundColor = "transparent";
     clearWoL.innerHTML = "";
-    let clearCc = document.querySelector("#log_player_choice");
+    let clearCc = document.querySelector("#log_player_choice p");
     clearCc.style.backgroundColor = "transparent";
     clearCc.style.borderColor = "transparent";
     clearCc.innerHTML = "";
-    let clearPc = document.querySelector("#log_computer_choice");
+    let clearPc = document.querySelector("#log_computer_choice p");
     clearPc.style.backgroundColor = "transparent";
     clearPc.style.borderColor = "transparent";
     clearPc.innerHTML = "";
 }
 
 function logger(m) {
-    let logMessage = document.querySelector("#log_win_or_loose");
+    let logMessage = document.querySelector("#log_win_or_loose p");
     logMessage.innerHTML = (m);
     logMessage.style.backgroundColor = "black";
     console.log(m);
 }
 
 function logPlayerChoice(m) {
-    let logMessage = document.querySelector("#log_player_choice");
+    let logMessage = document.querySelector("#log_player_choice p");
     logMessage.innerHTML = (m);
     logMessage.style.backgroundColor = "lightblue";
     logMessage.style.borderColor = "black";
@@ -109,7 +109,7 @@ function logPlayerChoice(m) {
 }
 
 function logComputerChoice(m) {
-    let logMessage = document.querySelector("#log_computer_choice");
+    let logMessage = document.querySelector("#log_computer_choice p");
     logMessage.innerHTML = (m);
     logMessage.style.backgroundColor = "lightblue";
     logMessage.style.borderColor = "black";
